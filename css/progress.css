@@ -1,0 +1,94 @@
+.skill-container {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    /* border:1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.skill-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    /* border:1px solid black; */
+    /* overflow: hidden; */
+}
+
+.circle {
+    width: 100%;
+    margin: 6px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    /* border:1px solid black; */
+}
+
+.circle canvas {
+    margin-top: -15px;
+    vertical-align: top;
+    width: 40px !important;
+    height: 40px !important;
+    /* border:1px solid black; */
+
+}
+
+.circle strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-left: 30px;
+    margin-top: -9px;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 0, 0);
+    /* border:1px solid black; */
+}
+
+.skill-box span {
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .skill-box {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .circle canvas {
+        margin-top: -15px;
+        vertical-align: top;
+        width: 55px !important;
+        height: 55px !important;
+        /* border:1px solid black; */
+
+    }
+
+    .circle strong {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200%;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-left: 38px;
+        margin-top: -9px;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 0, 0);
+        /* border:1px solid black; */
+    }
+}
