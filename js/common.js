@@ -8,7 +8,7 @@ $(document).ready(function () {
     var bannerTop, bannerBoxHeight;  //휠을 동작시킬 요소의 전체 높이
     var $vertical = 0;//한번 휠을 할때마다 움직일 값
     var bannerPosition = 0;
-    var $lastHeight; //휠을 동작시킬 요소의 마지막 위치를 착아서 휠을 다시 스크롤로 변경
+    var $lastHeight; //휠을 동작시킬 요소의 마지막 위치를 찾아서 휠을 다시 스크롤로 변경
     var timeOut, $bannerContainer, windowHeight, wheelStart;
     // /////////////// 초기값 설정 /////////////////
     function init() {
@@ -27,7 +27,8 @@ $(document).ready(function () {
         $bannerContainer = $(".banner-detail-container").height();
         bannerBoxHeight = $(".box-wrap").height();
         $vertical = 150; //휠을 사용해서 요소가 움직일 값 판단해서 값 적용\
-        $lastHeight = bannerBoxHeight - $bannerContainer;
+        $lastHeight = bannerBoxHeight - bannerBoxHeight;
+        // $lastHeight = bannerBoxHeight - $bannerContainer;
         //실제 내용의 전체 높이-내용을 감싸는 요소의 높이를 뺌
 
         console.log("bannerBox : " + bannerBoxHeight)
