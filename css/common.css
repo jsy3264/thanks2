@@ -414,8 +414,9 @@ header {
 
 .b-d-box a {
     display: block;
-    width:90%;
+    width: 90%;
     padding: 10px;
+    margin: auto;
 }
 
 .b-d-box a img {
@@ -528,7 +529,7 @@ header {
 }
 
 @media screen and (min-width:768px) {
-   
+
 
     .detail-main h2 span {
         display: inline-block;
@@ -622,7 +623,7 @@ header {
         width: 33.33%;
     }
 
-  
+
     .detail-container {
         display: flex;
         justify-content: space-around;
