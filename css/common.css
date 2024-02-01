@@ -61,6 +61,7 @@ section {
     padding-top: 0;
 }
 
+
 /* 헤더 */
 header {
     height: 70px;
@@ -184,6 +185,7 @@ header {
 
 .about-container {
     width: 100%;
+    max-width: 1440PX;
     margin: auto;
     height: 100%;
     overflow: auto;
@@ -248,7 +250,7 @@ header {
 }
 
 #skill .s-title {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #banner-detail .s-title {

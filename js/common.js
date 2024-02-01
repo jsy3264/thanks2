@@ -18,7 +18,8 @@ $(document).ready(function () {
         console.log("header 높이 : " + headerHeight)
 
         $("section").css({
-            height: windowHeight - (headerHeight)
+            height: windowHeight
+            // height: windowHeight - (headerHeight)
         })
 
         //banner 초기화 마직막 위치를 찾기위한....
