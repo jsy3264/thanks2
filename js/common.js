@@ -40,6 +40,7 @@ $(document).ready(function () {
     }
     init();
     // ////////////// 네비 버튼 //////////////////
+
     var $navBool = true;
     $(".navBt").click(function () {
         if ($navBool) {
@@ -74,7 +75,7 @@ $(document).ready(function () {
             }
             $("html,body").stop().animate({
                 scrollTop: $hash
-            }, 1000)
+            }, 100)
             $position = index
             $active($position)
             $navBool = true;
@@ -104,6 +105,9 @@ $(document).ready(function () {
         $(".section").eq($aniIndex + 1).find(".web-box").removeClass("webActive")
         $(".section").eq($aniIndex).find(".web-box").addClass("webActive")
 
+        $(".section").eq($aniIndex - 1).find(".detail-container").removeClass("skillActive")
+        $(".section").eq($aniIndex + 1).find(".detail-container").removeClass("skillActive")
+        $(".section").eq($aniIndex).find(".detail-container").addClass("skillActive")
         // $(".section").eq($aniIndex-1).find("b-d-box").removeClass("boxActive")
         // $(".section").eq($aniIndex).find("b-d-box").addClass("boxActive")
         $(".section").eq($aniIndex - 1).find(".banner-detail-container").removeClass("bannerActive")
@@ -193,6 +197,7 @@ $(document).ready(function () {
     })
 
 
+
     function $circle() {
         $('.photoshop.circle').circleProgress({
             value: 0.35,
@@ -239,6 +244,7 @@ $(document).ready(function () {
     $(".close").click(function () {
         $(".d-headlast").hide();
     })
+
 
 })
 

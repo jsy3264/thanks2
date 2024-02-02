@@ -433,6 +433,15 @@ header {
 .detail-container {
     width: 100%;
     margin: auto;
+    transform: translate(-300px, 200px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.detail-container.skillActive {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 1.5s;
 }
 
 .detail-main {
